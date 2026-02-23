@@ -1,0 +1,9 @@
+{
+	"name": "mauriciovelezrengifo-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3e7ef9bd-76c1-4e0b-aeb3-aaefe5755d6e",
+		"tenantId": "56aa9c07-69e1-4b8d-abc7-bc1b463ef8f2"
+	}
+}

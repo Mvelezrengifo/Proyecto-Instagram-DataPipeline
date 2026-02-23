@@ -1,0 +1,257 @@
+{
+	"name": "pipelininstam",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "instagram_lifestyle_raw",
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "user_id",
+				"type": "String"
+			},
+			{
+				"name": "app_name",
+				"type": "String"
+			},
+			{
+				"name": "age",
+				"type": "String"
+			},
+			{
+				"name": "gender",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "urban_rural",
+				"type": "String"
+			},
+			{
+				"name": "income_level",
+				"type": "String"
+			},
+			{
+				"name": "employment_status",
+				"type": "String"
+			},
+			{
+				"name": "education_level",
+				"type": "String"
+			},
+			{
+				"name": "relationship_status",
+				"type": "String"
+			},
+			{
+				"name": "has_children",
+				"type": "String"
+			},
+			{
+				"name": "exercise_hours_per_week",
+				"type": "String"
+			},
+			{
+				"name": "sleep_hours_per_night",
+				"type": "String"
+			},
+			{
+				"name": "diet_quality",
+				"type": "String"
+			},
+			{
+				"name": "smoking",
+				"type": "String"
+			},
+			{
+				"name": "alcohol_frequency",
+				"type": "String"
+			},
+			{
+				"name": "perceived_stress_score",
+				"type": "String"
+			},
+			{
+				"name": "self_reported_happiness",
+				"type": "String"
+			},
+			{
+				"name": "body_mass_index",
+				"type": "String"
+			},
+			{
+				"name": "blood_pressure_systolic",
+				"type": "String"
+			},
+			{
+				"name": "blood_pressure_diastolic",
+				"type": "String"
+			},
+			{
+				"name": "daily_steps_count",
+				"type": "String"
+			},
+			{
+				"name": "weekly_work_hours",
+				"type": "String"
+			},
+			{
+				"name": "hobbies_count",
+				"type": "String"
+			},
+			{
+				"name": "social_events_per_month",
+				"type": "String"
+			},
+			{
+				"name": "books_read_per_year",
+				"type": "String"
+			},
+			{
+				"name": "volunteer_hours_per_month",
+				"type": "String"
+			},
+			{
+				"name": "travel_frequency_per_year",
+				"type": "String"
+			},
+			{
+				"name": "daily_active_minutes_instagram",
+				"type": "String"
+			},
+			{
+				"name": "sessions_per_day",
+				"type": "String"
+			},
+			{
+				"name": "posts_created_per_week",
+				"type": "String"
+			},
+			{
+				"name": "reels_watched_per_day",
+				"type": "String"
+			},
+			{
+				"name": "stories_viewed_per_day",
+				"type": "String"
+			},
+			{
+				"name": "likes_given_per_day",
+				"type": "String"
+			},
+			{
+				"name": "comments_written_per_day",
+				"type": "String"
+			},
+			{
+				"name": "dms_sent_per_week",
+				"type": "String"
+			},
+			{
+				"name": "dms_received_per_week",
+				"type": "String"
+			},
+			{
+				"name": "ads_viewed_per_day",
+				"type": "String"
+			},
+			{
+				"name": "ads_clicked_per_day",
+				"type": "String"
+			},
+			{
+				"name": "time_on_feed_per_day",
+				"type": "String"
+			},
+			{
+				"name": "time_on_explore_per_day",
+				"type": "String"
+			},
+			{
+				"name": "time_on_messages_per_day",
+				"type": "String"
+			},
+			{
+				"name": "time_on_reels_per_day",
+				"type": "String"
+			},
+			{
+				"name": "followers_count",
+				"type": "String"
+			},
+			{
+				"name": "following_count",
+				"type": "String"
+			},
+			{
+				"name": "uses_premium_features",
+				"type": "String"
+			},
+			{
+				"name": "notification_response_rate",
+				"type": "String"
+			},
+			{
+				"name": "account_creation_year",
+				"type": "String"
+			},
+			{
+				"name": "last_login_date",
+				"type": "String"
+			},
+			{
+				"name": "average_session_length_minutes",
+				"type": "String"
+			},
+			{
+				"name": "content_type_preference",
+				"type": "String"
+			},
+			{
+				"name": "preferred_content_theme",
+				"type": "String"
+			},
+			{
+				"name": "privacy_setting_level",
+				"type": "String"
+			},
+			{
+				"name": "two_factor_auth_enabled",
+				"type": "String"
+			},
+			{
+				"name": "biometric_login_used",
+				"type": "String"
+			},
+			{
+				"name": "linked_accounts_count",
+				"type": "String"
+			},
+			{
+				"name": "subscription_status",
+				"type": "String"
+			},
+			{
+				"name": "user_engagement_score",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
