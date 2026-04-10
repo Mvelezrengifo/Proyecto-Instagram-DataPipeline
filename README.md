@@ -1,38 +1,48 @@
-# Proyecto-Instagram-DataPipeline
-"Pipeline de datos masivos usando Azure Data Factory, Databricks y Azure Blob Storage".
+📸 Proyecto Instagram DataPipeline
+Pipeline de datos masivos usando Azure Data Factory, Databricks y Azure Blob Storage.
 
-Pipeline de Procesamiento Masivo: Instagram Lifestyle Dataset 🚀
-📝 Descripción del Proyecto
-Este proyecto demuestra la orquestación de un flujo de datos (ETL) a gran escala, procesando más de 1.5 millones de registros. El objetivo fue transformar datos crudos de comportamiento de usuarios en Instagram desde una zona de aterrizaje (Raw) hasta una zona procesada lista para analítica.
+📝 Descripción
+Este proyecto demuestra la orquestación de un flujo ETL a gran escala, procesando más de 1.5 millones de registros del dataset Instagram Lifestyle.
+El objetivo es transformar datos crudos de comportamiento de usuarios desde la zona Raw hasta una zona Procesada, lista para análisis.
 
 🛠️ Arquitectura Tecnológica
-Azure Data Factory (ADF): Orquestación del pipeline y movimiento de datos.
+Azure Data Factory (ADF) → orquestación y movimiento de datos.
 
-Azure Databricks (PySpark): Procesamiento distribuido y transformación de la capa Silver.
+Azure Databricks (PySpark) → procesamiento distribuido y capa Silver.
 
-Azure Blob Storage: Almacenamiento estructurado en capas (Raw/Processed).
+Azure Blob Storage → almacenamiento estructurado en capas (Raw/Processed).
 
-GitHub Integration: Control de versiones para toda la infraestructura de datos.
+GitHub → control de versiones de la infraestructura de datos.
 
 ⚙️ Flujo del Pipeline
-Ingesta: Los datos se reciben en contenedores de Azure Blob Storage.
+Ingesta → datos recibidos en contenedores de Blob Storage.
 
-Procesamiento: Uso de Databricks con optimización de memoria para manejar el volumen masivo de filas.
+Procesamiento → Databricks con optimización de memoria para alto volumen.
 
-Orquestación: Creación de un pipeline en ADF utilizando:
+Orquestación → ADF con:
 
 Datasets parametrizados.
 
-Wildcard File Paths (*): Para ingesta de múltiples archivos generados por Spark.
+Rutas comodín (*) para múltiples archivos Spark.
 
-SAS Tokens: Implementación de seguridad y gobernanza en el acceso a datos.
+SAS Tokens para seguridad y gobernanza.
 
 📊 Resultados Técnicos
-Volumen: ~440 MB de datos procesados.
+Volumen procesado: ~440 MB.
 
-Rendimiento: Tasa de transferencia de 73.28 MB/s.
+Rendimiento: 73,28 MB/s de transferencia.
 
-Escalabilidad: Implementación de copias en paralelo utilizando múltiples DIUs en Azure.
+Escalabilidad: copias en paralelo con múltiples DIU en Azure.
 
 🛡️ Gobernanza y Seguridad
-Se aplicaron políticas de acceso mediante firmas de acceso compartido (SAS) para limitar los permisos de escritura/lectura entre servicios, siguiendo el principio de "mínimo privilegio".
+Políticas de acceso con SAS Tokens.
+
+Principio de mínimo privilegio aplicado en permisos de lectura/escritura.
+
+👤 Autor
+Mauricio Vélez Rengifo  
+Ingeniero de Datos | Desarrollador Backend
+
+GitHub: Mvelezrengifo
+
+LinkedIn: Mauricio Vélez
